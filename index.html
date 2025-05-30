@@ -1,11 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amir Eduardo Canul Gil</title>
-  </head>
-  <body>
-    <h1>Hola</h1>
-  </body>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>AECG</title>
+        <link rel="icon" type="image/icon" href="assets/images/tabicon.ico">
+
+        <link rel="stylesheet" type="text/css" href="">
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+        <link href="assets/css/bootstrap-theme.min.css" rel="stylesheet">
+        <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700,700i" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,700,700i|Josefin+Sans:700" rel="stylesheet">
+        <link href="assets/css/main.css" rel="stylesheet">
+        <link rel="icon" href="assets/images/logo.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+        
+    </head>
+
+    <body>
+        <div id="index">                                           <!-- Index starts here -->
+            <div class="container main">
+                <div class="row home">
+                    <div id = "index_left" class="col-md-6 left">
+                        <img class="img-responsive img-rabbit" src="assets/images/MiCara.jpeg">
+                    </div>
+                    <div id = "index_right" class="col-md-6 text-center right">
+                        <div class="logo">
+                            <img src="assets/images/logo.png">
+                            <h4>Amir Eduardo Canul Gil</h4>
+                        </div>
+                        <p class="home-description">
+                            Mechatronics Engineering Student & Programming Enthusiast
+                        </p>
+                        <div class="btn-group-vertical custom_btn animated slideinright">
+                            <div id="about" class="btn btn-rabbit">About</div>
+                            <div id="work" class="btn btn-rabbit">Work</div>
+                            <div id="contact" class="btn btn-rabbit">Contact</div>
+                            <a href="assets/docs/Amir_Canul_CV.pdf" download class="btn btn-rabbit">Download my CV</a>
+                        </div>      
+                        <div class="social">
+                            <a href="https://github.com/AmirECG" target="_blank" rel="noopener noreferrer">
+                                <i class="fa fa-github" aria-hidden="true"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/amir-eduardo-canul-gil" target="_blank" rel="noopener noreferrer">
+                                <i class="fa fa-linkedin" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>                                                      <!-- index ends here -->
+
+        <div id="about_scroll" class="pages ">                      <!-- about strats here  -->
+            <div class="container main">
+                <div class="row">
+                    <div class="col-md-6 left" id="about_left">
+                        <img class="img-responsive img-rabbit" src="assets/images/pizarra.jpeg">
+                    </div>
+
+                    <div class="col-md-6 right" id="about_right">
+                        <a href="#index" class="btn btn-rabbit back"> <i class="fa fa-angle-left" aria-hidden="true"></i> Back to home </a>
+                        <div id="watermark">
+                            <h2 class="page-title" text-center>About</h2>
+                            <div class="marker">About</div>
+                        </div>
+                        <p class='subtitle'>Engineering • Coding • 3D printing
+                        </p>
+                        <p class="info">Passionate about electronics, programming, 3D printing and logic challenges.
+                            Currently pursuing a Mechatronics Engineering degree at Universidad Autónoma De Yucatán (UADY), where I apply my skills in Python, C++, C#, and tools like VS Code and Autodesk Fusion.
+                            I also hold a Google Cloud Engineering certification.</p>  
+                    </div>
+                </div>
+            </div>            
+        </div>                                                                <!-- About ends here -->
+
+
+
+       <div id="work_scroll" class="pages">                                  <!-- Work starts here  -->
+    <div class="container main">
+        <a href="#index" class="btn btn-rabbit back"><i class="fa fa-angle-left" aria-hidden="true"></i> Back to Home</a>
+        <div id="watermark">
+            <h2 class="page-title" text-center>Work</h2>
+            <div class="marker">Work</div>
+        </div>
+        
+        <div class="work-intro">
+            <p class="subtitle">Explore some of my proyects</p>
+            <p class="info">
+                Here you will find projects that i've been working on recently. You can find more info in my GitHub profile.
+            </p>
+        </div>
+
+         <!-- Proyecto 0 -->
+        <div class="row project-item">
+            <div class="col-md-6">
+                <img class="img-responsive img-rabbit" src="assets/images/DespertadorMate.jpeg">
+            </div>
+            <div class="col-md-6 project-description">
+                <h3>Math Alarm Clock with ESP32</h3>
+                <p class="info">I designed and built an interactive math-based alarm clock using an ESP32, which forces users to solve random arithmetic problems to disable the alarm. The system combines embedded programming, 3D printing, and IoT connectivity for a unique wake-up experience.</p>
+            </div>
+        </div>
+
+        <!-- Proyecto 1 -->
+        <div class="row project-item">
+            <div class="col-md-6">
+                <img class="img-responsive img-rabbit" src="assets/images/BirdFeeder.jpeg">
+            </div>
+            <div class="col-md-6 project-description">
+                <h3>Automated Bird Feeder with IoT</h3>
+                <p class="info">Developed using an ESP32, dispenses food at scheduled times and monitors food inventory via the IoT platform Ubidots. 3D printed body. The system includes:
+
+Remote control via a mobile app.
+OLED display to show time and feeder status.
+Audible notifications (buzzer) during dispensing.
+Manual container reset via a physical button.</p>
+            </div>
+        </div>
+        
+        <!-- Proyecto 2 -->
+        <div class="row project-item">
+            <div class="col-md-6">
+                <img class="img-responsive img-rabbit" src="assets/images/SSMaquina1.jpeg">
+            </div>
+            <div class="col-md-6 project-description">
+                <h3>Repair and Modernization of an iHR550 Oscilloscope</h3>
+                <p class="info">Successfully restored a malfunctioning iHR550 oscilloscope for my university by designing a custom PCB and developing an Arduino-based control system for its internal mirror assembly.
+                    This project combined hardware repair, reverse engineering, and embedded programming to bring legacy equipment back to life.
+                </p>
+            </div>
+        </div>
+        
+    </div>
+</div>                                                                 <!-- Work ends here  -->
+
+
+        <div id="contact_scroll" class="pages">                             <!-- Contact starts here -->
+            <div class="container main">
+                <div class="row">
+                    <div class="col-md-6 left" id="contact_left">
+                        <img class="img-responsive img-rabbit" src="assets/images/ImagenDePresentacion.png">
+                    </div>
+
+                    <div class="col-md-6 right" id="contact_right">
+                        <a href="#index" class="btn btn-rabbit back"> <i class="fa fa-angle-left" aria-hidden="true"></i> Back to Home </a>
+                        <div id="watermark">
+                            <h2 class="page-title" text-center>Contact</h2>
+                            <div class="marker">contact</div>
+                        </div>
+                        <p class='subtitle'>You can send me an email to: AmirCanulG@gmail.com
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>                                                              <!-- Contact ends here -->
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/script.js"></script>
+    </body>
 </html>
