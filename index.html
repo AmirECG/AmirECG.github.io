@@ -1,0 +1,874 @@
+<!doctype html>
+<html lang="es" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amir Canul — Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio de Amir Canul, desarrollador de software."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Syne:wght@700;800&family=Outfit:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- NAVBAR  -->
+    <header class="navbar" id="navbar">
+      <div class="nav-inner">
+        <a class="nav-logo" href="#hero" data-nav="hero" aria-label="Inicio">
+          <span class="bracket">&lt;</span>AC<span class="bracket">/&gt;</span>
+        </a>
+
+        <nav class="nav-links" aria-label="Menú principal">
+          <a href="#hero" class="nav-link" data-nav="hero">
+            <span class="n-num">01.</span>Inicio</a
+          >
+          <a href="#projects" class="nav-link" data-nav="projects"
+            ><span class="n-num">02.</span>Proyectos</a
+          >
+          <a href="#about" class="nav-link" data-nav="about">
+            <span class="n-num">03.</span>Sobre mí</a
+          >
+          <a href="#contact" class="nav-link" data-nav="contact">
+            <span class="n-num">04.</span>Contacto</a
+          >
+        </nav>
+
+        <div class="nav-actions">
+          <button id="themeToggle" class="icon-btn" aria-label="Cambiar tema">
+            <i class="fa-solid fa-sun"></i>
+          </button>
+          <button
+            id="hamburger"
+            class="icon-btn hamburger"
+            aria-label="Abrir menú"
+            aria-expanded="false"
+          >
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Menú mobile -->
+      <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+        <a href="#hero" class="m-link" data-nav="hero">
+          <span class="n-num">01.</span>Inicio</a
+        >
+        <a href="#projects" class="m-link" data-nav="projects"
+          ><span class="n-num">02.</span>Proyectos</a
+        >
+        <a href="#about" class="m-link" data-nav="about">
+          <span class="n-num">03.</span>Sobre mí</a
+        >
+        <a href="#contact" class="m-link" data-nav="contact">
+          <span class="n-num">04.</span>Contacto</a
+        >
+      </div>
+    </header>
+
+    <!--  MAIN -->
+    <main>
+      <!--  HERO  -->
+      <section id="hero" class="section sec-hero">
+        <div class="bg-dots" aria-hidden="true"></div>
+
+        <div class="container hero-grid">
+          <!-- Texto izquierdo -->
+          <div class="hero-text">
+            <p class="terminal-line">
+              <span class="t-user">amir</span><span class="t-sep">@</span
+              ><span class="t-host">portfolio</span
+              ><span class="t-sep">:~$&nbsp;</span><span id="typedText"></span
+              ><span class="t-cursor" aria-hidden="true">▌</span>
+            </p>
+
+            <!-- Nombre -->
+            <h1 class="hero-name">Hola, soy<br /><em>Amir Canul</em></h1>
+
+            <!-- Título -->
+            <p class="hero-title">
+              <span class="tag-open">&lt;</span>Entusiasta de la
+              programación<span class="tag-close">&nbsp;/&gt;</span>
+            </p>
+
+            <!-- Bio -->
+            <p class="hero-bio">
+              Entusiasmado por construir aplicaciones web modernas, limpias y
+              escalables. Me encanta aprender nuevas tecnologías y resolver
+              problemas con código.
+            </p>
+
+            <div class="hero-btns">
+              <!-- URL de PDF -->
+              <a
+                href="assets/cv/cv_amircanul_español.pdf"
+                class="btn btn-primary"
+                download
+              >
+                <i class="fa-solid fa-file-arrow-down"></i> Descargar CV
+              </a>
+              <a href="#projects" class="btn btn-outline" data-nav="projects">
+                Ver proyectos <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+
+            <div class="hero-social">
+              <!-- URLs -->
+              <a
+                href="https://github.com/AmirECG"
+                target="_blank"
+                rel="noopener"
+                class="s-icon"
+                aria-label="GitHub"
+              >
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/amecg/"
+                target="_blank"
+                rel="noopener"
+                class="s-icon"
+                aria-label="LinkedIn"
+              >
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+              <a
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=amircanulg@gmail.com"
+                class="s-icon"
+                target="_blank"
+                aria-label="Enviar Email"
+              >
+                <i class="fa-solid fa-envelope"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Tarjeta de código -->
+          <div class="code-card" aria-hidden="true">
+            <div class="cc-header">
+              <div class="cc-dots">
+                <span class="d-r"></span><span class="d-y"></span
+                ><span class="d-g"></span>
+              </div>
+              <span class="cc-file">developer.ts</span>
+              <span class="cc-lang">TypeScript</span>
+            </div>
+            <pre
+              class="cc-body"
+            ><code><span class="ck">const</span> <span class="cv">dev</span> <span class="co">=</span> {
+  <span class="cp">name</span><span class="co">:</span>      <span class="cs">"Amir Canul"</span>,
+  <span class="cp">role</span><span class="co">:</span>      <span class="cs">"Software Dev"</span>,
+  <span class="cp">location</span><span class="co">:</span>  <span class="cs">"México 🇲🇽"</span>,
+  <span class="cp">stack</span><span class="co">:</span> [
+    <span class="cs">"JavaScript"</span>,
+    <span class="cs">"React"</span>, <span class="cs">"Node.js"</span>,
+    <span class="cs">"Python"</span>, <span class="cs">"Git"</span>
+  ],
+  <span class="cp">available</span><span class="co">:</span> <span class="ck">true</span>
+}<span class="co">;</span></code></pre>
+            <div class="cc-footer">
+              <span class="status-dot"></span>
+              disponible para proyectos
+            </div>
+          </div>
+        </div>
+        <!-- /hero-grid -->
+      </section>
+
+      <!-- ──────── PROYECTOS ──────── -->
+      <section id="projects" class="section sec-projects">
+        <div class="container">
+          <div class="sec-header">
+            <p class="eyebrow"><span class="mono">// </span>trabajo selecto</p>
+            <h2>Proyectos</h2>
+            <p class="sec-sub">
+              Cosas que he construido. Cada uno resuelve un problema real.
+            </p>
+          </div>
+
+          <div class="proj-grid">
+            <!--  PROYECTO 1  -->
+            <!--
+            ► CÓMO AGREGAR TU IMAGEN:
+              Dentro de <div class="proj-top">, ANTES del .proj-overlay,
+              agrega: <img src="assets/captura.png" class="proj-img" alt="Nombre del proyecto">
+              y borra el <div class="proj-ph">...</div>
+
+              Ejemplo final:
+              <div class="proj-top">
+                <img src="assets/captura.png" class="proj-img" alt="Mi Proyecto">
+                <div class="proj-overlay">...</div>
+              </div>
+          -->
+            <article class="proj-card">
+              <div class="proj-top">
+                <img
+                  src="assets/imagenes/p1.webp"
+                  class="proj-img"
+                  alt="..."
+                  width="120"
+                  height="136"
+                />
+                <div class="proj-overlay">
+                  <a
+                    href="https://amirecg.github.io/Kingdom-Idle/"
+                    target="_blank"
+                    rel="noopener"
+                    class="ov-btn"
+                    aria-label="Ver demo"
+                  >
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  </a>
+                  <a
+                    href="https://github.com/AmirECG/Kingdom-Idle"
+                    target="_blank"
+                    rel="noopener"
+                    class="ov-btn"
+                    aria-label="Ver código"
+                  >
+                    <i class="fa-brands fa-github"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="proj-body">
+                <div class="proj-tags">
+                  <span class="ptag">CSS</span>
+                  <span class="ptag">JavaScript</span>
+                  <span class="ptag">HTML</span>
+                </div>
+                <h3>Kingdom Idle</h3>
+                <p>
+                  Este proyecto es un juego incremental tipo idle que empecé
+                  para mejorar mis habilidades en desarrollo web. Quería hacer
+                  algo parecido a Melvor Idle pero hecho por mí mismo, sin
+                  librerías, solo HTML, CSS y JavaScript puro. Por el momento el
+                  juego permite talar madera, minar piedra, subir de nivel
+                  herramientas (hacha y pico), guardar la partida y cambiar
+                  entre trabajos. Añadiré más características más adelante.
+                </p>
+                <div class="proj-links">
+                  <a
+                    href="https://amirecg.github.io/Kingdom-Idle/"
+                    target="_blank"
+                    rel="noopener"
+                    class="p-link"
+                    >Demo <i class="fa-solid fa-external-link-alt"></i
+                  ></a>
+                  <a
+                    href="https://github.com/AmirECG/Kingdom-Idle"
+                    target="_blank"
+                    rel="noopener"
+                    class="p-link"
+                    >Código <i class="fa-brands fa-github"></i
+                  ></a>
+                </div>
+              </div>
+            </article>
+
+            <!-- PROYECTO 2 -->
+            <article class="proj-card">
+              <div class="proj-top">
+                <img
+                  src="assets/imagenes/p2.webp"
+                  class="proj-img"
+                  alt="..."
+                  width="120"
+                  height="136"
+                />
+                <div class="proj-overlay">
+                  <a
+                    href="https://amirecg.github.io/Kanban-Timer-Web-App/"
+                    target="_blank"
+                    rel="noopener"
+                    class="ov-btn"
+                    aria-label="Ver demo"
+                  >
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  </a>
+                  <a
+                    href="https://github.com/AmirECG/Kanban-Timer-Web-App"
+                    target="_blank"
+                    rel="noopener"
+                    class="ov-btn"
+                    aria-label="Ver código"
+                  >
+                    <i class="fa-brands fa-github"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="proj-body">
+                <div class="proj-tags">
+                  <span class="ptag">JavaScript</span>
+                  <span class="ptag">CSS</span>
+                  <span class="ptag">HTML</span>
+                </div>
+                <h3>Organizador Kanban</h3>
+                <p>
+                  Un tablero organizador visual estilo Kanban con temporizador
+                  integrado por tarea. Permite gestionar el flujo de trabajo en
+                  tres columnas (Pendientes, En progreso y Terminadas), con
+                  funcionalidades de arrastrar y soltar, prioridades
+                  (alta/media/baja), temporizador individual para cada tarea,
+                  modo oscuro/claro y persistencia local en el navegador.
+                </p>
+                <div class="proj-links">
+                  <a
+                    href="https://amirecg.github.io/Kanban-Timer-Web-App/"
+                    target="_blank"
+                    rel="noopener"
+                    class="p-link"
+                    >Demo <i class="fa-solid fa-external-link-alt"></i
+                  ></a>
+                  <a
+                    href="https://github.com/AmirECG/Kanban-Timer-Web-App"
+                    target="_blank"
+                    rel="noopener"
+                    class="p-link"
+                    >Código <i class="fa-brands fa-github"></i
+                  ></a>
+                </div>
+              </div>
+            </article>
+
+            <!-- PROYECTO 3 -->
+            <article class="proj-card">
+              <div class="proj-top">
+                <img
+                  src="assets/imagenes/p3.webp"
+                  class="proj-img"
+                  alt="..."
+                  width="120"
+                  height="136"
+                />
+                <div class="proj-overlay">
+                  <a
+                    href="https://amirecg.github.io/Weather-App/"
+                    target="_blank"
+                    rel="noopener"
+                    class="ov-btn"
+                    aria-label="Ver demo"
+                  >
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  </a>
+                  <a
+                    href="https://github.com/AmirECG/Weather-App"
+                    target="_blank"
+                    rel="noopener"
+                    class="ov-btn"
+                    aria-label="Ver código"
+                  >
+                    <i class="fa-brands fa-github"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="proj-body">
+                <div class="proj-tags">
+                  <span class="ptag">HTML</span>
+                  <span class="ptag">JavaScript</span>
+                  <span class="ptag">CSS</span>
+                  <span class="ptag">Fetch API</span>
+                </div>
+                <h3>Weather App</h3>
+                <p>
+                  Una aplicación del clima que consume la API de OpenWeatherMap
+                  para mostrar información meteorológica actualizada. Permite
+                  buscar cualquier ciudad del mundo y visualizar temperatura en
+                  grados Celsius, humedad ambiental y velocidad del viento.
+                  Cuenta con iconos dinámicos que cambian según las condiciones
+                  climáticas (nubes, sol, lluvia, llovizna o niebla) y manejo de
+                  errores para ciudades no encontradas.
+                </p>
+                <div class="proj-links">
+                  <a
+                    href="https://amirecg.github.io/Weather-App/"
+                    target="_blank"
+                    rel="noopener"
+                    class="p-link"
+                    >Demo <i class="fa-solid fa-external-link-alt"></i
+                  ></a>
+                  <a
+                    href="https://github.com/AmirECG/Weather-App"
+                    target="_blank"
+                    rel="noopener"
+                    class="p-link"
+                    >Código <i class="fa-brands fa-github"></i
+                  ></a>
+                </div>
+              </div>
+            </article>
+
+            <!-- PROYECTO 4 -->
+            <article class="proj-card">
+              <div class="proj-top">
+                <img
+                  src="assets/imagenes/p4.webp"
+                  class="proj-img"
+                  alt="..."
+                  width="120"
+                  height="136"
+                />
+                <div class="proj-overlay">
+                  <!-- <a
+                    href="#"
+                    target="_blank"
+                    rel="noopener"
+                    class="ov-btn"
+                    aria-label="Ver demo"
+                  >
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  </a> -->
+                  <a
+                    href="https://github.com/AmirECG/Alarma-Matem-tica"
+                    target="_blank"
+                    rel="noopener"
+                    class="ov-btn"
+                    aria-label="Ver código"
+                  >
+                    <i class="fa-brands fa-github"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="proj-body">
+                <div class="proj-tags">
+                  <span class="ptag">Microcontrolador</span>
+                  <span class="ptag">C++</span>
+                  <span class="ptag">Electrónica</span>
+                  <span class="ptag">HTML</span>
+                  <span class="ptag">Fusion 360</span>
+                  <span class="ptag">Impresión 3D</span>
+                </div>
+                <h3>Despertador Matemático</h3>
+                <p>
+                  Sistema embebido diseñado para garantizar que el usuario
+                  despierte de manera efectiva mediante la resolución de
+                  operaciones matemáticas. El dispositivo permite configurar
+                  hasta 7 alarmas programables a través de una interfaz web.
+                  Incluye un servomotor que actúa como cerradura eléctrica para
+                  desbloquear el botón de apagado solo cuando la respuesta es
+                  correcta. La operación cambia automáticamente cada 60 segundos
+                  si no se ha resuelto, y el sistema cuenta con señales
+                  acústicas y visuales para alertar al usuario. Utiliza conexión
+                  WiFi para sincronizar la hora mediante NTP y dispone de
+                  batería de respaldo para cortes de energía.
+                </p>
+                <div class="proj-links">
+                  <!-- <a href="#" target="_blank" rel="noopener" class="p-link"
+                    >Demo <i class="fa-solid fa-external-link-alt"></i
+                  ></a> -->
+                  <a
+                    href="https://github.com/AmirECG/Alarma-Matem-tica"
+                    target="_blank"
+                    rel="noopener"
+                    class="p-link"
+                    >Código <i class="fa-brands fa-github"></i
+                  ></a>
+                </div>
+              </div>
+            </article>
+
+            <!-- PROYECTO 5 -->
+            <article class="proj-card">
+              <div class="proj-top">
+                <img
+                  src="assets/imagenes/p5.webp"
+                  class="proj-img"
+                  alt="..."
+                  width="120"
+                  height="136"
+                />
+                <div class="proj-overlay">
+                  <!-- <a
+                    href="#"
+                    target="_blank"
+                    rel="noopener"
+                    class="ov-btn"
+                    aria-label="Ver demo"
+                  >
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  </a> -->
+                  <a
+                    href="https://github.com/AmirECG/Alimentador-para-mascotas"
+                    target="_blank"
+                    rel="noopener"
+                    class="ov-btn"
+                    aria-label="Ver código"
+                  >
+                    <i class="fa-brands fa-github"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="proj-body">
+                <div class="proj-tags">
+                  <span class="ptag">Microcontrolador</span>
+                  <span class="ptag">C++</span>
+                  <span class="ptag">Ubidots</span>
+                  <span class="ptag">Electrónica</span>
+                  <span class="ptag">HTML</span>
+                  <span class="ptag">Fusion 360</span>
+                  <span class="ptag">Impresión 3D</span>
+                </div>
+                <h3>Proyecto 5</h3>
+                <p>
+                  Sistema embebido con conectividad IoT diseñado para dispensar
+                  comida de manera programada, proporcionando alimento en
+                  intervalos regulares. El dispositivo utiliza un ESP32 como
+                  microcontrolador principal, conectado a una red WiFi, y se
+                  integra con la plataforma Ubidots para monitoreo y control
+                  remoto desde cualquier lugar. La hora se sincroniza mediante
+                  NTP, permitiendo programar horarios específicos de
+                  alimentación. Cuando el contador de porciones llega a cero, se
+                  envía una alerta a Ubidots para notificar que el contenedor
+                  debe ser rellenado.
+                </p>
+                <div class="proj-links">
+                  <!-- <a href="#" target="_blank" rel="noopener" class="p-link"
+                    >Demo <i class="fa-solid fa-external-link-alt"></i
+                  ></a> -->
+                  <a
+                    href="https://github.com/AmirECG/Alimentador-para-mascotas"
+                    target="_blank"
+                    rel="noopener"
+                    class="p-link"
+                    >Código <i class="fa-brands fa-github"></i
+                  ></a>
+                </div>
+              </div>
+            </article>
+
+            <!-- PROYECTO X 
+            <article class="proj-card">
+              <div class="proj-top">
+                <div class="proj-ph">
+                  <div class="ph-bg"></div>
+                  <i class="fa-solid fa-chart-bar ph-ico"></i>
+                </div>
+                <div class="proj-overlay">
+                  <a
+                    href="#"
+                    target="_blank"
+                    rel="noopener"
+                    class="ov-btn"
+                    aria-label="Ver demo"
+                  >
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  </a>
+                  <a
+                    href="https://github.com/a"
+                    target="_blank"
+                    rel="noopener"
+                    class="ov-btn"
+                    aria-label="Ver código"
+                  >
+                    <i class="fa-brands fa-github"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="proj-body">
+                <div class="proj-tags">
+                  <span class="ptag">Vue.js</span>
+                  <span class="ptag">TypeScript</span>
+                  <span class="ptag">MySQL</span>
+                </div>
+                <h3>Proyecto X</h3>
+                <p>Descripción blablablablablablablalblalbla</p>
+                <div class="proj-links">
+                  <a href="#" target="_blank" rel="noopener" class="p-link"
+                    >Demo <i class="fa-solid fa-external-link-alt"></i
+                  ></a>
+                  <a
+                    href="https://github.com/amircanul/proyecto4"
+                    target="_blank"
+                    rel="noopener"
+                    class="p-link"
+                    >Código <i class="fa-brands fa-github"></i
+                  ></a>
+                </div>
+              </div>
+            </article> -->
+          </div>
+          <!-- /proj-grid -->
+        </div>
+      </section>
+
+      <!-- ──────── SOBRE MÍ ──────── -->
+      <section id="about" class="section sec-about">
+        <div class="container about-grid">
+          <!-- Texto -->
+          <div class="about-text">
+            <p class="eyebrow"><span class="mono">// </span>conóceme</p>
+            <h2>Sobre mí</h2>
+
+            <!-- Sobre mí -->
+            <div class="about-paras">
+              <p>
+                Soy Amir Canul, interesado por la tecnología y el aprendizaje
+                continuo. Ingeniero Mecatrónico egresado de la Universidad
+                Autónoma de Yucatán. Me apasiona la programación, la electrónica
+                y los videojuegos.
+              </p>
+              <p>
+                Me gusta explorar nuevas tecnologías, automatizar procesos y
+                colaborar en equipo.
+              </p>
+              <p>
+                Fuera del código, me gusta reparar electrónicos, jugar
+                videojuegos, juegos de mesa y escuchar música.
+              </p>
+            </div>
+
+            <!-- Experiencia -->
+            <div class="about-stats">
+              <div class="stat">
+                <span class="stat-n">1</span>
+                <span class="stat-l">año exp.</span>
+              </div>
+              <div class="stat">
+                <span class="stat-n">5+</span>
+                <span class="stat-l">proyectos</span>
+              </div>
+              <div class="stat">
+                <span class="stat-n">5+</span>
+                <span class="stat-l">tecnologías</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skills -->
+          <div class="about-skills">
+            <h3 class="sk-title">
+              <span class="mono accent">skills</span
+              ><span class="mono muted">.json</span>
+            </h3>
+
+            <div class="sk-list">
+              <!-- Nombres y porcentajes -->
+              <div class="sk-item">
+                <div class="sk-row">
+                  <span class="sk-name"
+                    ><i class="fa-brands fa-html5 sk-ico"></i>HTML</span
+                  >
+                  <span class="sk-pct mono">70%</span>
+                </div>
+                <div class="sk-bar">
+                  <div class="sk-fill" data-pct="78"></div>
+                </div>
+              </div>
+
+              <div class="sk-item">
+                <div class="sk-row">
+                  <span class="sk-name"
+                    ><i class="fa-brands fa-css3-alt sk-ico"></i> CSS</span
+                  >
+                  <span class="sk-pct mono">65%</span>
+                </div>
+                <div class="sk-bar">
+                  <div class="sk-fill" data-pct="74"></div>
+                </div>
+              </div>
+
+              <div class="sk-item">
+                <div class="sk-row">
+                  <span class="sk-name"
+                    ><i class="fa-brands fa-js sk-ico"></i> JavaScript</span
+                  >
+                  <span class="sk-pct mono">60%</span>
+                </div>
+                <div class="sk-bar">
+                  <div class="sk-fill" data-pct="70"></div>
+                </div>
+              </div>
+              <!--
+              <div class="sk-item">
+                <div class="sk-row">
+                  <span class="sk-name"
+                    ><i class="fa-brands fa-react sk-ico"></i> React</span
+                  >
+                  <span class="sk-pct mono">75%</span>
+                </div>
+                <div class="sk-bar">
+                  <div class="sk-fill" data-pct="75"></div>
+                </div>
+              </div>-->
+
+              <div class="sk-item">
+                <div class="sk-row">
+                  <span class="sk-name"
+                    ><i class="fa-brands fa-python sk-ico"></i>Python</span
+                  >
+                  <span class="sk-pct mono">50%</span>
+                </div>
+                <div class="sk-bar">
+                  <div class="sk-fill" data-pct="55"></div>
+                </div>
+              </div>
+
+              <div class="sk-item">
+                <div class="sk-row">
+                  <span class="sk-name"
+                    ><i class="fa-solid fa-microchip sk-ico"></i
+                    >Electrónica</span
+                  >
+                  <span class="sk-pct mono">70%</span>
+                </div>
+                <div class="sk-bar">
+                  <div class="sk-fill" data-pct="78"></div>
+                </div>
+              </div>
+
+              <!--
+              <div class="sk-item">
+                <div class="sk-row">
+                  <span class="sk-name"
+                    ><i class="fa-brands fa-node-js sk-ico"></i> Node.js</span
+                  >
+                  <span class="sk-pct mono">70%</span>
+                </div>
+                <div class="sk-bar">
+                  <div class="sk-fill" data-pct="70"></div>
+                </div>
+              </div>-->
+
+              <!--
+              <div class="sk-item">
+                <div class="sk-row">
+                  <span class="sk-name"
+                    ><i class="fa-solid fa-database sk-ico"></i> MySQL /
+                    NoSQL</span
+                  >
+                  <span class="sk-pct mono">45%</span>
+                </div>
+                <div class="sk-bar">
+                  <div class="sk-fill" data-pct="50"></div>
+                </div>
+              </div>-->
+            </div>
+            <!-- /sk-list -->
+
+            <div class="chips">
+              <span class="chip"><i class="fa-brands fa-git-alt"></i> Git</span>
+              <span class="chip">MySQL</span>
+              <span class="chip">Google Cloud</span>
+              <span class="chip">IoT</span>
+              <span class="chip">Impresión 3D</span>
+              <span class="chip">Fusion 360</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ──────── CONTACTO ──────── -->
+      <section id="contact" class="section sec-contact">
+        <div class="container contact-wrap">
+          <div class="sec-header">
+            <p class="eyebrow"><span class="mono">// </span>hablemos</p>
+            <h2>Contacto</h2>
+            <p class="sec-sub">Abierto a oportunidades.</p>
+          </div>
+
+          <div class="contact-cards">
+            <a
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=amircanulg@gmail.com"
+              class="c-card"
+              target="_blank"
+              aria-label="Email"
+            >
+              <div class="c-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div class="c-info">
+                <span class="c-label mono">email</span>
+                <span class="c-val">amircanulg@gmail.com</span>
+              </div>
+              <i class="fa-solid fa-arrow-right c-arr"></i>
+            </a>
+
+            <!-- URL GitHub -->
+            <a
+              href="https://github.com/AmirECG"
+              target="_blank"
+              rel="noopener"
+              class="c-card"
+              aria-label="GitHub"
+            >
+              <div class="c-icon"><i class="fa-brands fa-github"></i></div>
+              <div class="c-info">
+                <span class="c-label mono">github</span>
+                <span class="c-val">@AmirECG</span>
+              </div>
+              <i class="fa-solid fa-arrow-right c-arr"></i>
+            </a>
+
+            <!-- URL LinkedIn -->
+            <a
+              href="https://www.linkedin.com/in/amecg"
+              target="_blank"
+              rel="noopener"
+              class="c-card"
+              aria-label="LinkedIn"
+            >
+              <div class="c-icon"><i class="fa-brands fa-linkedin-in"></i></div>
+              <div class="c-info">
+                <span class="c-label mono">linkedin</span>
+                <span class="c-val">/in/amecg</span>
+              </div>
+              <i class="fa-solid fa-arrow-right c-arr"></i>
+            </a>
+          </div>
+
+          <!-- Botón de CV grande -->
+          <div class="cv-block">
+            <p class="cv-hint mono muted">
+              $ curl -O <span class="accent">[URL_CV]/amir-canul-cv.pdf</span>
+            </p>
+            <!-- URL CV -->
+            <a
+              href="assets/cv/cv_amircanul_español.pdf"
+              class="btn btn-primary btn-lg"
+              download
+            >
+              <i class="fa-solid fa-file-arrow-down"></i> Descargar CV
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container footer-inner">
+        <p class="f-copy mono">
+          <span class="accent">©</span> <span id="yr"></span> Amir Canul
+          &nbsp;·&nbsp;
+          <!--hecho con <span class="accent">&lt;3</span> -->
+        </p>
+        <div class="f-links">
+          <a
+            href="https://github.com/AmirECG"
+            target="_blank"
+            rel="noopener"
+            aria-label="GitHub"
+          >
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/amecg"
+            target="_blank"
+            rel="noopener"
+            aria-label="LinkedIn"
+          >
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
